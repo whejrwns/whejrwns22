@@ -1,16 +1,7 @@
 import streamlit as st
 import pandas as pd
 import altair as alt
-import os
-import sys
-import subprocess
-
-try:
-    from streamlit_gsheets import GSheetsConnection
-except ImportError:
-    subprocess.check_call([sys.executable, "-m", "pip", "install", "st-gsheets-connection"])
-    from streamlit_gsheets import GSheetsConnection
-
+from streamlit_gsheets import GSheetsConnection
 import datetime
 
 # 페이지 설정
