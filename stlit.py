@@ -20,16 +20,16 @@ st.markdown("<h1 style='font-size: 45px; margin-bottom: 20px;'>📝 간단 요�
 col1, col2, col3 = st.columns(3)
 
 with col1:
-    st.markdown("<div id='reading'></div>", unsafe_allow_html=True)
-    st.header("1. 독서 📚")
-    st.write("사실 책 읽는 것을 그다지 좋아하지 않습니다. 그래도 추천하고 싶은 책이 조금 있어서 해봅니다.")
-    st.success("최근 관심 분야: 인문학, 과학")
-
-with col2:
     st.markdown("<div id='football'></div>", unsafe_allow_html=True)
-    st.header("2. 축구 ⚽")
+    st.header("1. 축구 ⚽")
     st.write("축구 보는 것을 매우 좋아합니다. 특히 EPL에 토트넘이라는 팀을 열렬히 응원하고 있습니다..")
     st.info("두 시즌 연속 17등이라도 좋습니다...")
+
+with col2:
+    st.markdown("<div id='reading'></div>", unsafe_allow_html=True)
+    st.header("2. 독서 📚")
+    st.write("사실 책 읽는 것을 그다지 좋아하지 않습니다. 그래도 추천하고 싶은 책이 조금 있어서 해봅니다.")
+    st.success("최근 관심 분야: 인문학, 과학")
 
 with col3:
     st.markdown("<div id='music'></div>", unsafe_allow_html=True)
@@ -52,7 +52,7 @@ st.markdown("""
 </style>
 """, unsafe_allow_html=True)
 
-tab_read, tab_foot, tab_music = st.tabs(["📚 독서", "⚽ 축구", "🎵 음악"])
+tab_foot, tab_read, tab_music = st.tabs(["⚽ 축구", "📚 독서", "🎵 음악"])
 
 with tab_foot:
     st.subheader("우리 토트넘 빅6 맞습니다. 토트넘을 사랑하는 이유")
