@@ -22,8 +22,8 @@ col1, col2, col3 = st.columns(3)
 with col1:
     st.markdown("<div id='football'></div>", unsafe_allow_html=True)
     st.header("1. 축구 ⚽")
-    st.write("축구 보는 것을 매우 좋아합니다. 특히 EPL에 토트넘이라는 팀을 열렬히 응원하고 있습니다..")
-    st.info("두 시즌 연속 17등이라도 좋습니다...")
+    st.write("축구 보는 것을 매우 좋아합니다. 특히 EPL에 토트넘이라는 팀을 열렬히(?) 응원하고 있습니다.")
+    st.info("두 시즌 연속 17등이라도 좋습니다..")
 
 with col2:
     st.markdown("<div id='reading'></div>", unsafe_allow_html=True)
