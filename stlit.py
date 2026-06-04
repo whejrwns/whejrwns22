@@ -28,7 +28,7 @@ with col1:
 with col2:
     st.markdown("<div id='reading'></div>", unsafe_allow_html=True)
     st.header("2. 독서 📚")
-    st.write("사실 책 읽는 것을 그다지 좋아하지 않습니다. 그래도 추천하고 싶은 책이 조금 있어서 해봅니다.")
+    st.write("사실 책 읽는 것을 그다지 좋아하지 않습니다. 그래도 추천하고 싶은 책이 조금 있어서 해봅니다. 꼭 읽어보세요..!")
     st.success("최근 관심 분야: 인문학, 과학")
 
 with col3:
@@ -349,7 +349,7 @@ with tab_music:
             * **추천곡 2**: (산책 - GongGongGoo009)
             * *설명: 자기 전에 잡생각하면서 듣기 좋은 노래입니다.*
             """)
-            st.info("💡 **잠들기 전 생각:** 최근에는 좋아하던 누나랑 어떻게하면 친해질까 하면서 들었던 것 같습니다...ㅋㅋㅋ ")
+            st.info("💡 **잠들기 전 생각:** 최근에는 좋아하던 사람이랑 어떻게하면 친해질까 하면서 들었던 것 같습니다...ㅋㅋㅋ ")
             
         with st.expander("🌙 새벽 감성", expanded=True):
             st.markdown("""
