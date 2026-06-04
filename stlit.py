@@ -20,22 +20,22 @@ st.markdown("<h1 style='font-size: 45px; margin-bottom: 20px;'>📝 간단 요�
 col1, col2, col3 = st.columns(3)
 
 with col1:
+    st.markdown("<div id='reading'></div>", unsafe_allow_html=True)
+    st.header("1. 독서 📚")
+    st.write("사실 책 읽는 것을 그다지 좋아하지 않습니다. 그래도 추천하고 싶은 책이 조금 있어서 해봅니다.")
+    st.success("최근 관심 분야: 인문학, 과학")
+
+with col2:
     st.markdown("<div id='football'></div>", unsafe_allow_html=True)
-    st.header("1. 축구 ⚽")
+    st.header("2. 축구 ⚽")
     st.write("축구 보는 것을 매우 좋아합니다. 특히 EPL에 토트넘이라는 팀을 열렬히 응원하고 있습니다..")
     st.info("두 시즌 연속 17등이라도 좋습니다...")
 
-with col2:
+with col3:
     st.markdown("<div id='music'></div>", unsafe_allow_html=True)
-    st.header("2. 음악 감상 🎵")
+    st.header("3. 음악 감상 🎵")
     st.write("생각이 많아질때나 힘들때 음악을 많이 듣습니다. 평범한 순간도 음악과 함께면 특별해지는 것 같습니다.")
     st.success("요즘 즐겨 듣는 장르: 힙합, 인디")
-
-with col3:
-    st.markdown("<div id='reading'></div>", unsafe_allow_html=True)
-    st.header("3. 독서 📚")
-    st.write("사실 책 읽는 것을 그다지 좋아하지 않습니다. 그래도 추천하고 싶은 책이 조금 있어서 해봅니다.")
-    st.success("최근 관심 분야: 인문학, 과학")
 
 st.divider()
 
@@ -52,9 +52,9 @@ st.markdown("""
 </style>
 """, unsafe_allow_html=True)
 
-tab1, tab2, tab3 = st.tabs(["⚽ 축구", "🎵 음악", "📚 독서"])
+tab_read, tab_foot, tab_music = st.tabs(["📚 독서", "⚽ 축구", "🎵 음악"])
 
-with tab1:
+with tab_foot:
     st.subheader("우리 토트넘 빅6 맞습니다. 토트넘을 사랑하는 이유")
     st.write("일단 토트넘이 어떤 팀인지 알아보시죠. 사랑하지 않을 수 없습니다. ")
     
@@ -200,7 +200,7 @@ with tab1:
     st.divider()
     
 
-with tab2:
+with tab_music:
     st.subheader("노래없이는못살겠어요. 에어팟 닳게 만드는 노래")
     st.write("이제부터는 지극히 개인적으로 좋아하는 노래들을 설명하려고 합니다. 꼭 한번씩 들어보시길 바랍니다!!")
     
@@ -381,7 +381,7 @@ with tab2:
         st.write("**XXXTENTACION**")
         st.info("어둡고 내면의 복잡한 느낌을 이렇게 잘 살린 앨범은 아직 없음")
 
-with tab3:
+with tab_read:
     st.subheader("개인적으로 추천하는 책 3권")
     st.write("사실 책을 자주 읽지 않지만, 그래도 읽었던 책 중에 추천해보겠습니다.")
     
