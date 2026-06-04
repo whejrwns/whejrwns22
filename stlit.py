@@ -14,6 +14,8 @@ st.write("제가 좋아하는 것들과 취미를 공유해보려 합니다. 아
 
 st.divider()
 
+st.markdown("<h1 style='font-size: 45px; margin-bottom: 20px;'>📝 간단 요약</h1>", unsafe_allow_html=True)
+
 # 레이아웃을 컬럼으로 나누어 관심사 표현
 col1, col2 = st.columns(2)
 
@@ -349,7 +351,7 @@ with tab2:
             * **추천곡 2**: (산책 - GongGongGoo009)
             * *설명: 자기 전에 잡생각하면서 듣기 좋은 노래입니다.*
             """)
-            st.info("💡 **잠들기 전 생각:** 최근에는 좋아하던 사람이랑 어떻게하면 친해질까 하면서 들었던 것 같습니다...ㅋㅋㅋ ")
+            st.info("💡 **잠들기 전 생각:** 최근에는 좋아하던 누나랑 어떻게하면 친해질까 하면서 들었던 것 같습니다...ㅋㅋㅋ ")
             
         with st.expander("🌙 새벽 감성", expanded=True):
             st.markdown("""
