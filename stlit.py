@@ -16,8 +16,8 @@ st.divider()
 
 st.markdown("<h1 style='font-size: 45px; margin-bottom: 20px;'>📝 간단 요약</h1>", unsafe_allow_html=True)
 
-# 레이아웃을 컬럼으로 나누어 관심사 표현
-col1, col2 = st.columns(2)
+# 레이아웃을 3개의 컬럼으로 나누어 관심사 병렬 표현
+col1, col2, col3 = st.columns(3)
 
 with col1:
     st.markdown("<div id='football'></div>", unsafe_allow_html=True)
@@ -29,15 +29,13 @@ with col2:
     st.markdown("<div id='music'></div>", unsafe_allow_html=True)
     st.header("2. 음악 감상 🎵")
     st.write("생각이 많아질때나 힘들때 음악을 많이 듣습니다. 평범한 순간도 음악과 함께면 특별해지는 것 같습니다.")
-    st.success("요즘 즐겨 듣는 장르: 힙합,인디")
+    st.success("요즘 즐겨 듣는 장르: 힙합, 인디")
 
-st.divider()
-
-# 세 번째 관심사 (전체 너비 사용)
-st.markdown("<div id='reading'></div>", unsafe_allow_html=True)
-st.header("3. 독서 📚")
-st.write("사실 책 읽는 것을 그다지 좋아하지 않습니다. 그래도 추천하고 싶은 책이 조금 있어서 해봅니다.")
-st.success("최근 관심 분야: 인문학, 과학")
+with col3:
+    st.markdown("<div id='reading'></div>", unsafe_allow_html=True)
+    st.header("3. 독서 📚")
+    st.write("사실 책 읽는 것을 그다지 좋아하지 않습니다. 그래도 추천하고 싶은 책이 조금 있어서 해봅니다.")
+    st.success("최근 관심 분야: 인문학, 과학")
 
 st.divider()
 
