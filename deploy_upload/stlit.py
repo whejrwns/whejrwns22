@@ -751,16 +751,9 @@ with tab_read:
 # 사이드바 구성
 # ────────────────────────────────────────────────────────────
 with st.sidebar:
-    st.markdown("### 📌 빠른 이동 (목차)")
-    st.markdown("""
-    <a href="#intro" target="_self" class="toc-link">🎉 소개</a>
-    <a href="#football" target="_self" class="toc-link">⚽ 축구</a>
-    <a href="#reading" target="_self" class="toc-link">📚 독서</a>
-    <a href="#music" target="_self" class="toc-link">🎵 음악</a>
-    <a href="#detail" target="_self" class="toc-link">🔍 본격적인 설명</a>
-    """, unsafe_allow_html=True)
+    
 
-    st.divider()
+    
 
     st.markdown("### ✍️ 나만의 취향 기록하기")
     st.caption("관심사를 남겨주시면 구글 시트에 기록돼요!")
